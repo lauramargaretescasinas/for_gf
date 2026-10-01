@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>for liyah</title>
+<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css"></head><body>
+
+<div class="scr on" id="story" onclick="adv()"></div>
+<div class="scr" id="quiz"><div id="qs"></div></div>
+<div class="scr" id="res"><div class="card" style="text-align:center"><div style="margin-bottom:12px">result</div><div class="tm" id="at"></div><button class="b" id="rt" style="width:100%;margin-top:18px" onclick="again()">take again</button></div></div>
+<div class="scr" id="shoo"><div class="big pk">shoo ure not my baby</div></div>
+<div class="scr" id="win" onclick="if(winOK)go('home')">
+  <div><div class="pair" id="pair">
+    <div class="a card"><div class="hd" style="justify-content:center;color:var(--cr);font-size:1.8rem">hi babyyy!!!!!!! :D</div>
+    <div class="im">🐻🐼<img src="images/bubu-dudu.gif" alt="" onerror="this.remove()"></div></div>
+    <div class="b2 bd" id="lt"></div></div>
+    <div class="ck sm">(click)</div></div>
+</div>
+
+<div id="home">
+  <section><div class="t1" id="h1"></div><div class="t2 d1">my beautiful, gorgeous, perfect baby <span class="nm">liyah</span></div>
+    <div class="cp d2"><div>weve been together for</div><div class="cn">
+      <div><b id="cd">00</b>days</div><div><b id="ch">00</b>hrs</div><div><b id="cm">00</b>mins</div><div><b id="cs">00</b>secs</div></div></div>
+    <div class="d2" style="margin-top:34px"><button class="dn" onclick="$('menu').scrollIntoView({behavior:'smooth'})">scroll down v</button></div></section>
+  <section id="menu"><div class="grid">
+    <div class="box lb" onclick="go('songs')">songs that<br>are you</div>
+    <div class="box lv" onclick="go('pics')">pictures<br>together</div>
+    <div class="box mn" onclick="go('rsn')">reasons<br>i love you</div>
+    <div class="box pk" onclick="go('game')">match<br>our hearts</div></div></section>
+</div>
+
+<div class="scr" id="songs"><button class="bk" onclick="go('home',1)">&lt;- back</button><div class="ttl lb">songs that are you</div><div id="sl"></div></div>
+<div class="scr" id="pics"><button class="bk" onclick="go('home',1)">&lt;- back</button><div class="ttl lv">pictures together</div><div class="pics" id="pl"></div></div>
+<div class="scr" id="rsn" onclick="nr()"><button class="bk" onclick="event.stopPropagation();go('home',1)">&lt;- back</button><div id="rn"></div><div id="rt2">tap anywhere ♥</div></div>
+<div class="scr" id="game"><button class="bk" onclick="go('home',1)">&lt;- back</button><div class="ttl pk">match our hearts</div>
+  <div id="gm"></div><div id="gs"><button class="b" onclick="play()">start</button></div></div>
+<div id="znp"><button class="bk" onclick="closeNP()">v close</button>
+<div class="sim" id="zi"></div><div id="zt"></div><div id="za"></div>
+<input type="range" id="zsb" min="0" max="0" step="1" value="0" oninput="A&&(A.currentTime=this.value)"><div class="zr"><span id="ztc">0:00</span><span id="ztd">0:00</span></div>
+<div class="zc"><button onclick="op(ci-1)">|&lt;</button><button onclick="jump(-10)">-10</button><button class="b" id="zpp" onclick="pp()">||</button><button onclick="jump(10)">+10</button><button onclick="op(ci+1)">&gt;|</button></div>
+<button class="b" id="zb" onclick="tw()">why this song? ♥</button><div id="zw"></div></div>
+<div id="lb" onclick="this.style.display='none'"><img id="li" alt=""></div>
+
+<script src="js/script.js"></script></body></html>
